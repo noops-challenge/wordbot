@@ -10,56 +10,52 @@
 
 ```
 {
-  "words": [ "quadratically" ]
+  "words": [ "problem" ]
 }
 ```
 
 
-### Request Verbs
+### Request available sets
 
-`GET https://api.noopschallenge.com/wordbot?set=verbs&count=10`
+`GET https://api.noopschallenge.com/wordbot/sets`
 
 `HTTP 200`
 
 ```
-{
-  "words": [
-    "observe",
-    "grate",
-    "press",
-    "moan",
-    "attack",
-    "complete",
-    "behave",
-    "sip",
-    "clean",
-    "start"
-  ]
-}
-```
-
-
-### Request words from the "common" set
-
-`GET https://api.noopschallenge.com/wordbot?set=common&count=10`
-
-`HTTP 200`
-
-```
-{
-  "words": [
-    "drive",
-    "check",
-    "create",
-    "absolute",
-    "story",
-    "transport",
-    "unite",
-    "budget",
-    "mrs",
-    "region"
-  ]
-}
+[
+  "adjectives",
+  "adverbs",
+  "all",
+  "animals",
+  "cats",
+  "common",
+  "default",
+  "dinosaurs",
+  "dogs",
+  "encouragement",
+  "fabrics",
+  "flowers",
+  "fruits",
+  "gemstones",
+  "genres",
+  "horses",
+  "instruments",
+  "knots",
+  "menu",
+  "metals",
+  "moods",
+  "nouns",
+  "objects",
+  "occupations",
+  "prepositions",
+  "rhymeless",
+  "sports",
+  "vegetables",
+  "verbs",
+  "verbs_past",
+  "weather",
+  "wrestlers"
+]
 ```
 
 
@@ -72,16 +68,16 @@
 ```
 {
   "words": [
-    "trusting",
-    "suspended",
-    "assertive",
-    "protracted",
-    "postpartum",
-    "succeeding",
-    "locked",
-    "verbal",
-    "commissioned",
-    "gold-plated"
+    "departed",
+    "self-taught",
+    "enamel",
+    "saute",
+    "dazzled",
+    "modernized",
+    "exacting",
+    "whirlwind",
+    "freight",
+    "holiness"
   ]
 }
 ```
@@ -96,16 +92,40 @@
 ```
 {
   "words": [
-    "famously",
-    "upliftingly",
-    "carefully",
-    "brightly",
-    "powerfully",
-    "badly",
-    "innocently",
-    "questioningly",
-    "cautiously",
-    "usually"
+    "fiercely",
+    "daily",
+    "even",
+    "abnormally",
+    "too",
+    "vacantly",
+    "very",
+    "coaxingly",
+    "often",
+    "sedately"
+  ]
+}
+```
+
+
+### Request words from the "all" set
+
+`GET https://api.noopschallenge.com/wordbot?set=all&count=10`
+
+`HTTP 200`
+
+```
+{
+  "words": [
+    "thymocytes",
+    "sublimities",
+    "balefulness",
+    "punkiness",
+    "poetizes",
+    "stockists",
+    "mazedly",
+    "vender",
+    "combers",
+    "guy"
   ]
 }
 ```
@@ -120,16 +140,16 @@
 ```
 {
   "words": [
-    "otter",
-    "platypus",
-    "marmoset",
-    "rat",
-    "sheep",
-    "oryx",
-    "crow",
-    "hippopotamus",
-    "fox",
-    "baboon"
+    "dog",
+    "snake",
+    "boar",
+    "beaver",
+    "mountain goat",
+    "armadillo",
+    "goat",
+    "mustang",
+    "buffalo",
+    "tiger"
   ]
 }
 ```
@@ -144,16 +164,64 @@
 ```
 {
   "words": [
-    "Toyger",
-    "Korat",
-    "Turkish Van",
-    "German Rex",
-    "Somali",
-    "Japanese Bobtail",
-    "Burmese",
-    "Mekong Bobtail",
-    "Donskoy",
-    "Siberian"
+    "Oriental Shorthair",
+    "Pixie-bob",
+    "Manx",
+    "Savannah",
+    "Serrade Petit",
+    "Oriental Longhair",
+    "Burmilla",
+    "Havana Brown",
+    "Cyprus",
+    "American Shorthair"
+  ]
+}
+```
+
+
+### Request words from the "common" set
+
+`GET https://api.noopschallenge.com/wordbot?set=common&count=10`
+
+`HTTP 200`
+
+```
+{
+  "words": [
+    "when",
+    "leave",
+    "work",
+    "heat",
+    "town",
+    "it",
+    "country",
+    "nature",
+    "five",
+    "tax"
+  ]
+}
+```
+
+
+### Request words from the "default" set
+
+`GET https://api.noopschallenge.com/wordbot?set=default&count=10`
+
+`HTTP 200`
+
+```
+{
+  "words": [
+    "lemma",
+    "piece",
+    "henceforth",
+    "thwarter",
+    "millwright",
+    "protestant",
+    "prowl",
+    "lepidote",
+    "repeating",
+    "mild"
   ]
 }
 ```
@@ -168,16 +236,16 @@
 ```
 {
   "words": [
-    "Yunxiansaurus",
+    "Pycnonemosaurus",
+    "Avisaurus",
+    "Nedcolbertia",
+    "Torosaurus",
+    "Yingshanosaurus",
+    "Archosaur",
+    "Diceratus",
     "Diamantinasaurus",
-    "Dolichosuchus",
-    "Erketu",
-    "Afrovenator",
-    "Overosaurus",
-    "Sellosaurus",
-    "Loricatosaurus",
-    "Ahshislepelta",
-    "Canardia"
+    "Teleocrater",
+    "Ngexisaurus"
   ]
 }
 ```
@@ -192,16 +260,16 @@
 ```
 {
   "words": [
-    "Bavarian Mountain Hound",
-    "Löwchen",
-    "Bohemian Shepherd",
-    "Small Münsterländer",
-    "Glen of Imaal Terrier",
-    "Miniature Shar Pei",
-    "Hawaiian Poi Dog",
-    "Norrbottenspets",
-    "Azawakh",
-    "Miniature Schnauzer"
+    "Manchester Terrier",
+    "Irish Setter",
+    "Pražský Krysařík",
+    "Weimaraner",
+    "English Setter",
+    "Cretan Hound",
+    "English Toy Terrier (Black &amp; Tan)",
+    "German Wirehaired Pointer",
+    "Curly Coated Retriever",
+    "Kromfohrländer"
   ]
 }
 ```
@@ -216,16 +284,16 @@
 ```
 {
   "words": [
-    "magical",
-    "inventive",
-    "powerful",
-    "wonderful",
-    "fantastic",
-    "excellent",
-    "fun",
-    "groundbreaking",
-    "excellent",
-    "lifechanging"
+    "terrific",
+    "brilliant",
+    "lovely",
+    "resounding",
+    "miraculous",
+    "rejuvenating",
+    "terrific",
+    "remarkable",
+    "resounding",
+    "amazing"
   ]
 }
 ```
@@ -240,16 +308,16 @@
 ```
 {
   "words": [
-    "tulle",
-    "boiled wool",
-    "madras",
-    "seersucker",
-    "organza",
-    "scarlet",
-    "ultrasuede",
-    "samite",
+    "brocade",
+    "charvet",
+    "cretonne",
+    "beta cloth",
     "sea silk",
-    "alpaca"
+    "challis",
+    "whipcord",
+    "dowlas",
+    "ramie",
+    "broadcloth"
   ]
 }
 ```
@@ -264,16 +332,16 @@
 ```
 {
   "words": [
-    "begonia",
-    "buttercup",
+    "iris",
+    "peach blossom",
+    "tulip",
+    "sage",
+    "bellflower",
+    "rosemary",
     "clover",
-    "azalea",
-    "rhododendron",
-    "bluebell",
-    "violet",
-    "dahlia",
-    "orchid",
-    "begonia"
+    "rosemary",
+    "crocus",
+    "bellflower"
   ]
 }
 ```
@@ -288,16 +356,16 @@
 ```
 {
   "words": [
-    "lime",
-    "pineapple",
-    "tamarillo",
-    "raspberry",
-    "blueberry",
-    "quince",
-    "currant",
-    "quince",
+    "huckleberry",
     "damson",
-    "blueberry"
+    "dragonfruit",
+    "passionfruit",
+    "olive",
+    "bell pepper",
+    "elderberry",
+    "damson",
+    "passionfruit",
+    "fig"
   ]
 }
 ```
@@ -312,16 +380,16 @@
 ```
 {
   "words": [
-    "jade",
-    "corundum",
-    "diamond",
-    "prasiolite",
-    "pectolite",
-    "andradite",
-    "enstatite",
-    "creedite",
+    "crocidolite",
+    "shigaite",
+    "hemimorphite",
+    "ivory",
     "poudretteite",
-    "flint"
+    "spessartine",
+    "kunzite",
+    "iolite",
+    "nacre",
+    "sugilite"
   ]
 }
 ```
@@ -336,16 +404,16 @@
 ```
 {
   "words": [
-    "Dub",
-    "Raggacore",
-    "Ghetto house",
-    "Grindcore",
-    "Pop punk",
-    "Rock in Opposition",
-    "Heavy metal",
-    "Grime",
-    "Makina",
-    "Smooth jazz"
+    "Folk",
+    "Hardbag",
+    "Power pop",
+    "Rap metal",
+    "Jazz rock",
+    "Gothic rock",
+    "Eurodance",
+    "Traditional doom",
+    "Bouncy techno",
+    "Raga rock"
   ]
 }
 ```
@@ -360,16 +428,16 @@
 ```
 {
   "words": [
-    "Giara Horse",
-    "Karachai Horse",
-    "Pryor Mountain Mustang",
-    "Samolaco Horse",
-    "Mangalarga",
-    "Jaca Navarra",
-    "Friesian Cross",
-    "Vyatka",
-    "Austrian Warmblood",
-    "Russian Trotter"
+    "Arenberg-Nordkirchen",
+    "Mezőhegyesi Sport Horse",
+    "Hungarian Warmblood",
+    "Norwegian Fjord",
+    "Arabian Horse",
+    "Cumberland Island Horse",
+    "Criollo Horse",
+    "Sella Italiano",
+    "Spanish Mustang",
+    "Curly Horse"
   ]
 }
 ```
@@ -384,16 +452,16 @@
 ```
 {
   "words": [
-    "bagpipe",
-    "mandolin",
+    "piccolo",
+    "kazoo",
+    "guitar",
     "harmonica",
-    "pan flute",
-    "bagpipe",
-    "dulcimer",
-    "dulcimer",
-    "tambourine",
-    "tuba",
-    "dulcimer"
+    "fife",
+    "theremin",
+    "bugle",
+    "fife",
+    "ukulele",
+    "bassoon"
   ]
 }
 ```
@@ -408,16 +476,16 @@
 ```
 {
   "words": [
-    "Schwabisch knot",
-    "jamming knot",
-    "gripping sailor's hitch",
-    "half hitch",
-    "double overhand noose",
-    "strangle knot",
-    "bowline",
-    "double pile hitch",
-    "triple bowline",
-    "boa knot"
+    "savoy knot",
+    "buntline hitch",
+    "diamond knot",
+    "improved clinch knot",
+    "bottle sling",
+    "fiador knot",
+    "wagoner's hitch",
+    "wall and crown knot",
+    "blood knot",
+    "halyard bend"
   ]
 }
 ```
@@ -432,40 +500,16 @@
 ```
 {
   "words": [
-    "Old Fashioned",
-    "Buttered toast",
-    "Buckwheat Cakes",
-    "Sirloin Steak with Mushrooms",
-    "Ham and eggs",
-    "Anchovy Salad",
-    "Spring chicken",
-    "Lemon Water Ice",
-    "French Pastry",
-    "Rice"
-  ]
-}
-```
-
-
-### Request words from the "moods" set
-
-`GET https://api.noopschallenge.com/wordbot?set=moods&count=10`
-
-`HTTP 200`
-
-```
-{
-  "words": [
-    "comfortable",
-    "funny",
-    "haughty",
-    "effective",
-    "respected",
-    "ridicule",
-    "vivid",
-    "aroused",
-    "teased",
-    "cross"
+    "Fried Potatoes",
+    "BAKED IDAHO POTATO",
+    "Corn bread",
+    "Roast chicken",
+    "Eggs, Scrambled",
+    "Coffee, Pot",
+    "Spring Turkey (half)",
+    "Tomato Juice",
+    "Sloe Gin",
+    "New string beans"
   ]
 }
 ```
@@ -495,6 +539,30 @@
 ```
 
 
+### Request words from the "moods" set
+
+`GET https://api.noopschallenge.com/wordbot?set=moods&count=10`
+
+`HTTP 200`
+
+```
+{
+  "words": [
+    "impulsive",
+    "restless",
+    "terrified",
+    "dropped",
+    "dejected",
+    "vague",
+    "forgotten",
+    "mellow",
+    "condescension",
+    "irate"
+  ]
+}
+```
+
+
 ### Request words from the "nouns" set
 
 `GET https://api.noopschallenge.com/wordbot?set=nouns&count=10`
@@ -504,16 +572,16 @@
 ```
 {
   "words": [
-    "monogram",
-    "spouse",
-    "tinamou",
-    "insurgent",
-    "harvestman",
-    "uropygium",
-    "logan",
-    "peso",
-    "deserter",
-    "onyx"
+    "guardsman",
+    "educationist",
+    "pennoncel",
+    "continent",
+    "prerequisite",
+    "monoxide",
+    "myrrh",
+    "strict",
+    "speck",
+    "high-low"
   ]
 }
 ```
@@ -528,16 +596,16 @@
 ```
 {
   "words": [
-    "cars",
-    "can of beans",
-    "nail filer",
-    "boom box",
-    "perfume",
-    "jar of jam",
-    "lace",
-    "sheet of paper",
-    "rolling pin",
-    "chenille stick"
+    "mp3 player",
+    "keys",
+    "deodorant",
+    "can of peas",
+    "wristwatch",
+    "table",
+    "tiger",
+    "sketch pad",
+    "glow stick",
+    "outlet"
   ]
 }
 ```
@@ -552,16 +620,16 @@
 ```
 {
   "words": [
-    "massage therapist",
-    "insulation worker",
-    "engraver",
-    "communications equipment operator",
-    "wood patternmaker",
-    "special education teacher",
-    "subway operator",
-    "resort desk clerk",
-    "garment presser",
-    "meeting planner"
+    "order filler",
+    "musical instrument repairer",
+    "sheriff's patrol officer",
+    "fisher",
+    "farm labor contractor",
+    "cement mason",
+    "fish cutter",
+    "mapping technician",
+    "librarian",
+    "translator"
   ]
 }
 ```
@@ -576,16 +644,16 @@
 ```
 {
   "words": [
-    "back to",
-    "as of",
-    "as far as",
-    "nearer",
-    "like",
-    "at",
-    "nearer",
-    "versus",
-    "underneath",
-    "in spite of"
+    "around",
+    "on",
+    "with",
+    "by",
+    "over",
+    "with",
+    "out of",
+    "rather than",
+    "ahead of",
+    "via"
   ]
 }
 ```
@@ -600,16 +668,16 @@
 ```
 {
   "words": [
-    "bilge",
-    "foible",
-    "midsts",
-    "comment",
-    "fugue",
-    "midst",
+    "circle",
+    "eth",
     "sanction",
-    "secret",
-    "neutron",
-    "midst"
+    "woman",
+    "heighth",
+    "heighth",
+    "penguin",
+    "woman",
+    "glimpsed",
+    "neutron"
   ]
 }
 ```
@@ -624,16 +692,16 @@
 ```
 {
   "words": [
-    "Coastal and ocean rowing",
-    "Freestyle footbag",
-    "Ski jumping",
-    "Vault",
-    "Judo",
-    "Judo",
-    "Race of Champions",
-    "Vajra-mushti",
-    "Ice climbing",
-    "Outrigger canoeing"
+    "Horse racing",
+    "Miniature Bull Riding",
+    "Toe wrestling",
+    "Juggling",
+    "Patball",
+    "Sandboarding",
+    "Aizkolaritza",
+    "Silambam",
+    "Torball",
+    "Speed pool"
   ]
 }
 ```
@@ -648,64 +716,16 @@
 ```
 {
   "words": [
-    "fennel",
-    "kohlrabi",
-    "tabasco pepper",
-    "green pepper",
-    "mangetout",
-    "parsley",
-    "amaranth",
+    "thyme",
+    "herbs and spice",
+    "oregano",
+    "habanero",
+    "jicama",
+    "onion",
+    "lavender",
+    "habanero",
     "pinto bean",
-    "tabasco pepper",
-    "rosemary"
-  ]
-}
-```
-
-
-### Request words from the "weather" set
-
-`GET https://api.noopschallenge.com/wordbot?set=weather&count=10`
-
-`HTTP 200`
-
-```
-{
-  "words": [
-    "Heavy Rain Fog/Mist",
-    "Thunderstorm in Vicinity Haze",
-    "Heavy Showers Snow Fog",
-    "Thunderstorm Showers in Vicinity",
-    "Light Thunderstorm Rain Hail Haze",
-    "Light Showers Snow Fog",
-    "Thunderstorm Heavy Rain Hail Fog/Mist",
-    "Thunderstorm in Vicinity Fog/Mist",
-    "Heavy Snow Blowing Snow",
-    "Ice Pellets in Vicinity"
-  ]
-}
-```
-
-
-### Request words from the "wrestlers" set
-
-`GET https://api.noopschallenge.com/wordbot?set=wrestlers&count=10`
-
-`HTTP 200`
-
-```
-{
-  "words": [
-    "Rusev",
-    "\"Rowdy\" Roddy Piper",
-    "Evan Bourne",
-    "Goldust",
-    "Diego",
-    "CM Punk",
-    "Junkyard Dog",
-    "The Honky Tonk Man",
-    "Brutus \"The Barber\" Beefcake",
-    "Kane"
+    "brussels sprout"
   ]
 }
 ```
@@ -720,16 +740,16 @@
 ```
 {
   "words": [
-    "land",
-    "surprise",
-    "launch",
-    "pump",
-    "trap",
-    "extend",
-    "mess up",
-    "amuse",
-    "camp",
-    "fade"
+    "smile",
+    "sip",
+    "happen",
+    "hurry",
+    "flap",
+    "describe",
+    "owe",
+    "kick",
+    "crack",
+    "peel"
   ]
 }
 ```
@@ -744,16 +764,64 @@
 ```
 {
   "words": [
-    "prevented",
-    "sneezed",
-    "squashed",
-    "protected",
-    "increased",
-    "whistled",
-    "earned",
-    "crawled",
-    "tickled",
-    "disarmed"
+    "landed",
+    "surprised",
+    "launched",
+    "pumped",
+    "trapped",
+    "extended",
+    "messed up",
+    "amused",
+    "camped",
+    "faded"
+  ]
+}
+```
+
+
+### Request words from the "weather" set
+
+`GET https://api.noopschallenge.com/wordbot?set=weather&count=10`
+
+`HTTP 200`
+
+```
+{
+  "words": [
+    "Light Snow Fog/Mist",
+    "Mostly Cloudy and Windy",
+    "Light Freezing Rain Rain",
+    "Light Snow Showers Fog/Mist",
+    "Light Thunderstorm Rain",
+    "Dust/Sand Whirls in Vicinity",
+    "Drizzle Ice Pellets",
+    "Light Small Hail/Snow Pellets",
+    "Light Drizzle Fog/Mist",
+    "Heavy Snow Freezing Rain"
+  ]
+}
+```
+
+
+### Request words from the "wrestlers" set
+
+`GET https://api.noopschallenge.com/wordbot?set=wrestlers&count=10`
+
+`HTTP 200`
+
+```
+{
+  "words": [
+    "Jack Swagger",
+    "Barry Horowitz",
+    "Curtis Axel",
+    "The Undertaker",
+    "Bret \"Hitman\" Hart",
+    "Ricardo Rodriguez",
+    "Big E",
+    "Erick Rowan",
+    "The Miz",
+    "Brock Lesnar"
   ]
 }
 ```
