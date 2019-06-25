@@ -70,13 +70,12 @@ Wordbot has predefined sets for nouns, verbs, adjectives—and a number of speci
 
 ## 🤖 API basics
 
-There's a single endpoint: `api.noopschallenge.com/wordbot`
+The primary endpoint is `api.noopschallenge.com/wordbot`
 
 The endpoint accepts two parameters, both optional:
 
 - **count** *(optional, numeric)*: Between 1 and 1000. Number of words to return.
 - **set** *(optional, string)*: any of a predefined set of strings, listed below.
-
 
 Request a single word:
 
@@ -108,40 +107,27 @@ Request 100 words:
 }
 ```
 
-If you'd like to request from a predefined **set** of words, pass the `set` parameter with one of these values:
+To get a list of the available sets, request:
+
+`https://api.noopschallenge.com/wordbot/sets`
+
+Which will return an array of sets:
+
 ```
-adjectives
-adverbs
-animals
-common
-compounds
-cats
-dinosaurs
-dogs
-encouragement
-fabrics
-flowers
-fruits
-gemstones
-genres
-horses
-instruments
-knots
-menu
-moods
-metals
-nouns
-objects
-occupations
-prepositions
-rhymeless
-sports
-vegetables
-verbs
-verbs_past
-weather
-wrestlers
 ```
+[
+  "adjectives",
+  "adverbs",
+  "all",
+  "animals",
+  "cats",
+  "dinosaurs",
+  ...
+  "weather",
+  "wrestlers"
+]
+```
+
 
 To request a set of words, pass the `set` parameter, like so:
 
