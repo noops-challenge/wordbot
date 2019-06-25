@@ -40,7 +40,7 @@ If you need 100 words, just pass a `count` param:
 }
 ```
 
-Now you have a lot of words to work with—but they might not be exactly what you're looking for. There are, after all, a lot of words in the dictionary (did we mention 171,476?), and those words have a lot of different types: nouns, verbs, adjectives, and...like, more types that don't even have the words to describe.
+Now you have a lot of words to work with—but they might not be exactly what you're looking for. There are, after all, a lot of words in the dictionary (did we mention 171,476?), and those words have a lot of different types: nouns, verbs, adjectives, and...like, more types that we don't even have the words to describe.
 
 Wordbot's on your side, and has built **sets of words** to help you write more interesting amazingly useless software. If, for instance, you wanted to request *only* dinosaur names, you'd access:
 
@@ -59,12 +59,11 @@ Wordbot's on your side, and has built **sets of words** to help you write more i
 }
 ```
 
-Rawr! 🦕 Now you can replace every useful noun in your program with dinosaur names.
+Rawr! 🦕 Now you can replace every noun in your program with dinosaur names.
 
 Wordbot has predefined sets for nouns, verbs, adjectives—and a number of special sets like cats, dogs, fruits, and wrestlers (complete list in the API section below).
 
 ## ✨ A few ideas
-
 - Replace all of your interface commands in your code editor with dinosaur names.
 - Create a generator to randomly name your next project (like "reimagined-potential-broccoli").
 - Build a Madlibs generator that uses Wordbot's output to tell your story.
@@ -88,7 +87,6 @@ Request a single word:
   "words": ["pepperoni"]
 }
 ```
-
 
 Request 100 words:
 
@@ -165,3 +163,8 @@ To request a set of words, pass the `set` parameter, like so:
 Complete API documentation: [API.md](./API.md)
 
 More about Wordbot here: https://noopschallenge.com/challenges/wordbot
+
+
+---
+
+Subsets of words provided by [@dariusk](https://github.com/dariusk)'s excellent [corpora](https://github.com/dariusk/corpora).
